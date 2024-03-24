@@ -46,7 +46,7 @@ As an output the `.csv` file is stored in the `output/` directory (**created aut
 
 0. `docker pull andreyygrishin/currency_api` - download the image.
 1. `mkdir ./output/` - if not created (important).
-2. `docker run --rm -it -v ./output/:/home/output/ currency` - launch container.
+2. `docker run --rm -it -v ./output/:/home/output/ andreyygrishin/currency_api` - launch container.
 3. `python -m main --start="<start-date>" --end="<end-date>" --currency="<currency>"` - launch the script. **Date format**: `YYYY-MM-DD`.
 4. The result will be stored to your local directory `./output/`.
 5. Type: `exit` - the docker container will be killed.
