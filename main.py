@@ -11,7 +11,9 @@ def launch(
     start: str,  # start date: dd/mm/yyyy
     end: str,  # end date: dd/mm/yyyy
 ) -> None:
-    scheme = "https://cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To={}.{}.2023"
+    scheme = "https://cbr.ru/currency_base/"
+    scheme += "daily/?UniDbQuery.Posted=True&UniDbQuery.To={}.{}.2023"
+
     date_scheme = "{}-{}-{}"
 
     dates = pd.date_range(
