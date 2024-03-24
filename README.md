@@ -24,7 +24,7 @@ Key hyperparameters of the algorithm are:
 2. `end` - end date of the time range.
 3. `currency` - currency name (like: USD or RUB).
 
-As an output the `.csv` file is stored in the `output/` directory in the following format: `RUB-<currency> <start>-<end>.csv`. The inner structure of the file is as follows:
+As an output the `.csv` file is stored in the `output/` directory (**created automatically**) in the following format: `RUB-<currency> <start>-<end>.csv`. The inner structure of the file is as follows:
 
 | Date     | RUB - \<Currency\> |
 | :----:   | :----:           |
