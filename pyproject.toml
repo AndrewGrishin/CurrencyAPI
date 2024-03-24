@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "currencycbapi"
+name = "CurrencyAPI"
 version = "0.1.0"
 description = "Select currency exchange rates from Russian Central Bank."
 authors = ["Andrey Grishin <grishinandreyy@icloud.com>"]
