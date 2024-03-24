@@ -1,15 +1,16 @@
 import os
+from datetime import datetime
 
 import fire
 import pandas as pd
 
-from src.utils import collect_currency
+from currencyapi.utils import collect_currency
 
 
 def launch(
     currency: str,
-    start: str,  # start date: dd/mm/yyyy
-    end: str,  # end date: dd/mm/yyyy
+    start: str,  # start date: yyyy-mm-dd
+    end: str,  # end date: yyyy-mm-dd
 ) -> None:
     scheme = "https://cbr.ru/currency_base/"
     scheme += "daily/?UniDbQuery.Posted=True&UniDbQuery.To={}.{}.2023"
@@ -17,8 +18,8 @@ def launch(
     date_scheme = "{}-{}-{}"
 
     dates = pd.date_range(
-        start=start,
-        end=end,
+        start=datetime.strptime(start, "%Y-%m-%d"),
+        end=datetime.strptime(end, "%Y-%m-%d"),
         freq="D",
     )
 
