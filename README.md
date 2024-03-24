@@ -3,7 +3,16 @@
 ## Structure
 
 ```bash
-
+.
+├── currencyapi
+│   ├── __init__.py
+│   └── utils
+│       └── __init__.py
+├── poetry.lock
+├── pyproject.toml
+├── Dockerfile
+├── main.py
+└── README.md
 ```
 
 The main goal of all of the project is to collect the exchange rate from web-site of Russian [Central Bank](https://cbr.ru/insurance/reporting_stat/).
